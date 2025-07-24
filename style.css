@@ -98,6 +98,8 @@ nav {
 main {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 /* card-section */
 .card-section {
@@ -120,15 +122,16 @@ main {
 .card-title-description {
   text-align: center;
   font-size: 1.4rem;
+  margin: 0 auto;
 }
 .card-container {
-  width: 100%;
+  width: 103%;
   height: auto;
 
   margin: 20px 0px;
   display: grid;
   grid-template-columns: repeat(4, 2fr);
-  place-items: center;
+  /* place-items: center; */
   row-gap: 30px;
 }
 .card-box {
@@ -160,7 +163,50 @@ main {
   color: white;
   margin-top: 10px;
 }
+/* seller section */
+.seller-container {
+  margin-top: 170px;
+  margin-bottom: 130px;
+  max-width: 1440px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.seller-box {
+  width: 50%;
+  height: 500px;
+}
+.img-box {
+  width: 100%;
+  height: 550px;
+  background-image: url("assets/flower-store.png");
+  background-size: cover;
+  background-position: center;
+}
 
+.trusted-logo {
+  width: 200px;
+  height: 200px;
+}
+.badge {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -91px;
+  left: 362px;
+}
+
+.seller-title {
+  font-weight: bold;
+  font-size: 3rem;
+}
+ul li {
+  margin-top: 10px;
+  white-space: nowrap;
+  font-size: 1.4rem;
+}
 /* Responsive Design For Mobile Device */
 
 @media screen and (max-width: 576px) {
@@ -204,5 +250,36 @@ main {
   }
   .card-cart {
     padding: 11px 1px;
+  }
+  .card-title-description {
+    font-size: 0.8rem;
+  }
+  .break1,
+  .break2,
+  .break3,
+  .break4 {
+    display: inline-block;
+  }
+
+  /* seller section */
+  .trusted-logo {
+    display: none;
+  }
+  .seller-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .img-box {
+    width: 200%;
+  }
+  .seller-title {
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  ul li {
+    margin-left: 20px;
+    font-size: 0.8rem;
   }
 }
