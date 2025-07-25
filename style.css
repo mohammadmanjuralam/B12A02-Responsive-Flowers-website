@@ -1,0 +1,526 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Noto Serif Font */
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Inter Font */
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(30, 30, 30, 10%);
+}
+
+/* shared style */
+.text-gray {
+  color: #0000007e;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+.navbar {
+  max-width: 1440px;
+  width: 80%;
+  height: 71px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #0000007e;
+}
+.home {
+  color: black;
+}
+
+/* Banner section */
+.banner-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+.banner-container {
+  max-width: 1440px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.banner-section {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+}
+.banner-title {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.flowers {
+  font-weight: bold;
+  font-size: 3rem;
+  color: #e95a08;
+}
+.fresh {
+  color: #e95a08;
+  padding-left: 0.6rem;
+}
+.banner-img {
+  height: 280px;
+}
+
+/* main section */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* card-section */
+.card-section {
+  max-width: 1440px;
+}
+
+.card-section {
+  margin-top: 120px;
+  max-width: 1440px;
+  width: 80%;
+}
+.card-title {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+.our {
+  color: #e95a08;
+}
+.card-title-description {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0 auto;
+}
+.card-container {
+  width: 103%;
+  height: auto;
+
+  margin: 20px 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  /* place-items: center; */
+  row-gap: 30px;
+}
+.card-box {
+  width: 90%;
+  height: auto;
+}
+.card-img {
+  width: 100%;
+}
+.lily {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.usd {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.card-cart {
+  width: 100%;
+  font-weight: 500;
+  padding: 15px 40px;
+  text-align: center;
+  background-color: #e95a08;
+  border: none;
+  color: white;
+  margin-top: 10px;
+}
+/* seller section */
+.seller-container {
+  margin-top: 170px;
+  margin-bottom: 130px;
+  max-width: 1440px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.seller-box {
+  width: 50%;
+  height: 500px;
+}
+.img-box {
+  width: 100%;
+  height: 550px;
+  background-image: url("assets/flower-store.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.trusted-logo {
+  width: 200px;
+  height: 200px;
+}
+.badge {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+
+  top: 3%; /* parent height এর 50% */
+  left: 39%; /* parent width এর 50% */
+  transform: translate(-50%, -50%); /* element center করবে */
+}
+
+.seller-title {
+  font-weight: bold;
+  font-size: 3rem;
+}
+ul li {
+  margin-top: 10px;
+  white-space: nowrap;
+  font-size: 1.4rem;
+}
+/* <!-- Challenge Part  Latest Deal Section--> */
+.latest-deal-container {
+  width: 80%;
+  margin: 120px 0;
+}
+.latest {
+  color: #e95a08;
+}
+.Deals {
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+}
+.latest-description {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  text-align: center;
+  white-space: nowrap;
+}
+/* image-container */
+.deal-image-container {
+  margin: 60px 0;
+  max-width: 1440px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.multi-image-container {
+  width: 400px;
+  height: 300px;
+}
+.img-ana {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/deal-ana.png");
+  background-size: cover;
+  width: 367px;
+  height: 201px;
+  border-radius: 14px;
+}
+.img-bloom {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/deal-bloom.png");
+  background-size: cover;
+  width: 367px;
+  height: 201px;
+  border-radius: 14px;
+  margin-top: 25px;
+}
+.img-zabo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/deal-zabo.png");
+  background-size: cover;
+  width: 753px;
+  height: 425px;
+  border-radius: 22px;
+}
+.items-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.img-ana a,
+.img-bloom a {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.img-zabo {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.img-ana h3 {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.img-bloom h3 {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.img-zabo h1 {
+  font-weight: bold;
+  font-size: 2.6rem;
+}
+.col {
+  color: white;
+}
+
+/* join-section */
+.join-container {
+  width: 100%;
+  height: auto;
+}
+.join-img {
+  background-image: url("assets/news-letter-bg.png");
+  background-size: cover;
+  width: 100%;
+  height: 533px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+.join-title {
+  font-weight: bold;
+  font-size: 3.1rem;
+  margin-bottom: 20px;
+}
+input {
+  width: 644px;
+  height: 50px;
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+}
+.join-btn {
+  width: 186px;
+  height: 50px;
+  background-color: #e95a08;
+  color: white;
+  border: none;
+  position: relative;
+  right: 5px;
+  font-weight: 900;
+}
+/* footer-section */
+footer {
+  width: 100%;
+  height: 348px;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-logo-container {
+  margin-top: 20px;
+}
+.footer-logo-description {
+  margin-top: 20px;
+}
+
+.primary li {
+  list-style: none;
+  margin-top: 20px;
+}
+.primary li a {
+  text-decoration: none;
+  color: #0000007e;
+}
+.social-logo {
+  display: flex;
+}
+.social-logo img {
+  margin-right: 15px;
+  height: 36px;
+  width: 36px;
+  margin-top: 20px;
+}
+
+/* Responsive Design For Mobile Device IPHONE 14 PRO MAX */
+
+@media screen and (max-width: 576px) {
+  /* Navbar section */
+  .nav-links li:not(:last-child) {
+    display: none;
+  }
+  .logo {
+    width: 63px;
+  }
+
+  /* Banner section */
+  .banner-container {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .banner-section {
+    margin-top: 20px;
+    margin-right: 10px;
+    gap: 8px;
+  }
+  .banner-img {
+    width: 100%;
+  }
+  .banner-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  .flowers {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #e95a08;
+  }
+  .fresh {
+    color: #e95a08;
+  }
+
+  /* card-section */
+  .card-title-container {
+    margin-bottom: 50px;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-cart {
+    padding: 11px 1px;
+  }
+  .card-title-description {
+    font-size: 0.8rem;
+  }
+  .break1,
+  .break2,
+  .break3,
+  .break4 {
+    display: inline-block;
+  }
+
+  /* seller section */
+  .trusted-logo {
+    display: none;
+  }
+  .seller-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 50px 0px;
+  }
+  .img-box {
+    width: 200%;
+  }
+  .seller-title {
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .title-des {
+    font-size: 14px;
+  }
+  ul li {
+    margin-left: 20px;
+    font-size: 0.8rem;
+  }
+  /* Challenge Part Latest Deals section */
+  .latest-description {
+    white-space: wrap;
+    font-size: 12px;
+  }
+  .latest-deal-container {
+    margin: 0px 0px;
+  }
+  .deal-image-container {
+    flex-direction: column;
+  }
+  .img-zabo,
+  .img-ana,
+  .img-bloom {
+    width: 351px;
+    height: 185px;
+  }
+  .img-zabo h1,
+  .img-ana h3,
+  .img-bloom h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .img-zabo {
+    margin-top: 25px;
+  }
+
+  .col {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  /* join-section */
+  .join-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .join-img {
+    width: 100%;
+    background-position: center;
+    height: 275px;
+  }
+  .join-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  input {
+    width: 218px;
+  }
+  .join-btn {
+    width: 103px;
+  }
+  /* footer section */
+  footer {
+    height: 865px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-logo-container {
+    margin-left: 20px;
+  }
+  .footer-logo-description {
+    text-align: left;
+  }
+  .break {
+    display: block;
+  }
+  .social-logo {
+    margin-left: 20px;
+  }
+}
