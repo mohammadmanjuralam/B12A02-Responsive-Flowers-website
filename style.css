@@ -195,9 +195,9 @@ main {
   height: 200px;
   position: absolute;
 
-  top: 3%; /* parent height এর 50% */
-  left: 39%; /* parent width এর 50% */
-  transform: translate(-50%, -50%); /* element center করবে */
+  top: 3%;
+  left: 39%;
+  transform: translate(-50%, -50%);
 }
 
 .seller-title {
