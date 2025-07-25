@@ -299,7 +299,7 @@ ul li {
 
 /* join-section */
 .join-container {
-  width: 1440px;
+  width: 100%;
   height: auto;
 }
 .join-img {
@@ -334,7 +334,41 @@ input {
   right: 5px;
   font-weight: 900;
 }
-/* Responsive Design For Mobile Device */
+/* footer-section */
+footer {
+  width: 100%;
+  height: 348px;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-logo-container {
+  margin-top: 20px;
+}
+.footer-logo-description {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.primary li {
+  list-style: none;
+  margin-top: 20px;
+}
+.primary li a {
+  text-decoration: none;
+  color: #0000007e;
+}
+.social-logo {
+  display: flex;
+}
+.social-logo img {
+  margin-right: 15px;
+  height: 36px;
+  width: 36px;
+  margin-top: 20px;
+}
+
+/* Responsive Design For Mobile Device IPHONE 14 PRO MAX */
 
 @media screen and (max-width: 576px) {
   /* Navbar section */
@@ -443,8 +477,9 @@ input {
     display: flex;
     justify-content: center;
   }
+
   .join-img {
-    width: 40%;
+    width: 100%;
     background-position: center;
     height: 275px;
   }
@@ -457,5 +492,20 @@ input {
   }
   .join-btn {
     width: 103px;
+  }
+  /* footer section */
+  footer {
+    height: 865px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-logo-container {
+    margin-left: 20px;
+  }
+  .footer-logo-description {
+    text-align: left;
+  }
+  .social-logo {
+    margin-left: 20px;
   }
 }
